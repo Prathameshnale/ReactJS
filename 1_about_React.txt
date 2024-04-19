@@ -1,0 +1,74 @@
+JavaScript Points must know for ReactJS -
+1. let, var, const, functions, arrow functions, import and export (modules)
+
+
+
+import - when we want to access any function, property or data from another file then we need used 
+         import keyword. as we use import then only the data which was exported will be import in that file.
+
+        e.g  (so here we want to import emp object from employee.js file into app.js file)
+
+        file name - employee.js
+
+        export let emp = {
+            name : "prathamesh"
+        }
+
+        export let age=100;
+
+
+        file name - app.js
+        //there are many ways to import that object
+        1. import { emp } from './employee.js';
+        2. import { age } form './employee.js';
+        3. import { emp as e1 } from './employee.js';  (e1 is a anonymous name for emp we must use only e1 in app.js)
+        4. import * as EmpObj from './employee.js'; (this syntax used to access everything which was exported 
+                                                    from employee.js at the same time but while use we should 
+                                                    use it with EmpObj.emp like this,here EmpOjb is act as object
+                                                    of emplyee file)
+        5. import { emp, age } from '/emplyee.js'; (for acessing multiple data at the same time)
+
+
+export - when we want to send any data to another file then we need to use export keyword.
+
+AS we can see in above employee.js file we want to export the emp object and let variable we want to export
+so for that we write the keyword export at the begining.
+
+
+
+default export -
+
+    file name - employee.js
+
+        export let emp = {
+            name : "prathamesh"
+        }
+
+        let age=100;
+
+        export default age;  //in any single file we can use export data defualt only one time 
+                             //it can be only data like object,variable but only once in sigle file
+        
+    
+    file name - app.js
+
+        1. import age from './employee.js';  //this is how we can directly import default data with same name.
+
+        2. import a from './employee.js';  //this is how we can directly import dafault data with another name.
+        
+
+
+
+
+
+
+1. What is react ?
+
+-> React is a JavaScript library used to build UI.
+
+
+2. Use/features of React
+
+-> To make single page applications(React) and mobile applications(React Native).
+
+
