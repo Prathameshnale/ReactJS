@@ -46,7 +46,7 @@ default export -
 
         let age=100;
 
-        export default age;  //in any single file we can use export data defualt only one time 
+        export default age;  //in any single file we can use export data as defualt only one time 
                              //it can be only data like object,variable but only once in sigle file
         
     

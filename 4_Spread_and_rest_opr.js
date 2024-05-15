@@ -40,3 +40,35 @@ let employee = {
 console.log(person);
 
 console.log(employee);
+
+
+
+
+
+//Rest operator -> If we use ... with the arguments inside the functions then it is called as rest operator.
+//e.g 
+
+
+function display(a,b,c){
+
+    console.log(a, b, c);
+}
+
+display(11,22,33);
+
+//in above example display function can take only 3 arguments so while calling this function we should 
+//pass only 3 arguments here we do not have any flexibility to pass any number of arguments.
+//to for that purpose the rest operator is used 
+
+//e.g 
+
+
+function show(...all){     //declaration of rest operator as an array of an arguments.
+
+    console.log(all);      //all is considered as an array of arguments.
+
+}
+
+show(4,5,8876,"prathamesh");   //now we can have the flexibility to pass any number of arguments to
+                               //the show function.  
+
