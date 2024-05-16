@@ -27,3 +27,27 @@ let newarr1=[n1, ,n3, , ]=arr;  //if we don't want to assign to any particular e
 
 
 console.log(n1,n3);
+
+
+
+
+
+
+//Object destructuring
+
+//to assigning the property of object to the variable is called as object destructuring.
+
+const emp = {
+    name:"prathamesh",
+    id:8876
+}
+
+console.log("without using destructuring = "+emp.name+" "+emp.id);
+
+//now we assign the property name and id of emp object to the two sepearate variable using object destructuring
+
+let {name,id} = emp;   //this is how we can assign the variable to the property of object.
+
+//so now we can access this two property of object by using the new names as name and id as follow
+
+console.log("using destructuring = "+name+" "+id);
