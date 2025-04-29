@@ -1,4 +1,4 @@
-//Inheritance is used to access/aquire the all the properties and functionality of the one class
+//Inheritance is used to access/aquire the all the properties and functionality of one class
 //into another class.
 
 class Person{

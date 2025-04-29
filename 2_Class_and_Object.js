@@ -50,4 +50,4 @@ emp1.show();
 
 //how to display object in js
 
-console.log(emp1);
+console.log(emp1);  
