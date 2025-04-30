@@ -1,4 +1,4 @@
-import ExpenseItem from "./Components/ExpenseItem";
+import Expenses from "./Components/Expenses/Expenses";
 //import './App.css';
 
 /*
@@ -20,7 +20,7 @@ function App(){
 
 export default App;   */
 
-function App() {
+const App = ()=> {
   //now in this example we have multiple component (3) to pass data/props
   let expenseArray = [
     //so here we make array of three objects (each object for each components as props)
@@ -42,27 +42,19 @@ function App() {
       title: "Maintenance",
       price: 400,
     },
+    {
+      id: "e4",
+      date: new Date(2025, 4, 29),
+      title: "Others",
+      price: 1000,
+    }
   ];
 
   return (
     <div>
       <h1 align="center">Welcome to expense Tracker</h1>
       <div className="app-class">
-        <ExpenseItem
-          date={expenseArray[0].date}
-          title={expenseArray[0].title}
-          price={expenseArray[0].price}
-        />
-        <ExpenseItem
-          date={expenseArray[1].date}
-          title={expenseArray[1].title}
-          price={expenseArray[1].price}
-        />
-        <ExpenseItem
-          date={expenseArray[2].date}
-          title={expenseArray[2].title}
-          price={expenseArray[2].price}
-        />
+        <Expenses expenseArray={expenseArray}/>
       </div>
     </div>
   );

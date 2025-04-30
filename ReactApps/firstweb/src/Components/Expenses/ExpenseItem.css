@@ -30,8 +30,8 @@
     font-weight: bold;
     align-items: flex-end;
     color: black;
-    background-color: blueviolet;
-    border: 1px solid wheat;
+    background-color: rgb(208, 158, 255);
+    border: 1px solid rgb(7, 7, 7);
     padding: 0.5rem;
     border-radius: 12px;
 }

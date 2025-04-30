@@ -1,0 +1,13 @@
+.Expense-Date{
+    display: flex;
+    flex-direction: row;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid rgb(16, 15, 15);
+    background-color: rgb(235, 183, 245);
+    color: rgb(21, 19, 19);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}

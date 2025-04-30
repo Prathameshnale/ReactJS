@@ -1,6 +1,6 @@
 /*
 Props - Props stands for properties which are read only, immutable i.e we cannot modify them and props are basically used
-        to pass the data from one component to another compenent.
+        as to pass the data from one component to another compenent.
 
 
         e.g let us consider below example, we have two js files App.js and ExpenseItem.js, In which in ExpenseItem.js file we
